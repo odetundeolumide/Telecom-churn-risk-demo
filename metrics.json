@@ -1,0 +1,63 @@
+{
+  "rows": 3333,
+  "duplicates": 0,
+  "churn_rate": 0.1449,
+  "test_rows": 667,
+  "selected_model": "Gradient Boosting",
+  "candidates_cv": {
+    "Logistic Regression": {
+      "cv_auc": 0.8141,
+      "cv_avg_precision": 0.4503
+    },
+    "Random Forest": {
+      "cv_auc": 0.9108,
+      "cv_avg_precision": 0.817
+    },
+    "Gradient Boosting": {
+      "cv_auc": 0.9151,
+      "cv_avg_precision": 0.8218
+    }
+  },
+  "headline_auc": 0.9,
+  "headline_auc_std": 0.024,
+  "test_auc": 0.8614,
+  "test_avg_precision": 0.7402,
+  "at_0.5": {
+    "threshold": 0.5,
+    "recall": 0.66,
+    "precision": 0.762,
+    "f1": 0.707,
+    "churners_caught": 64,
+    "churners_missed": 33,
+    "false_alarms": 20,
+    "churners_in_test": 97
+  },
+  "at_chosen_threshold": {
+    "threshold": 0.16,
+    "recall": 0.753,
+    "precision": 0.518,
+    "f1": 0.613,
+    "churners_caught": 73,
+    "churners_missed": 24,
+    "false_alarms": 68,
+    "churners_in_test": 97
+  },
+  "feature_importance": {
+    "CustServCalls": 0.2269,
+    "ContractRenewal": 0.1661,
+    "DayMins": 0.1623,
+    "MonthlyCharge": 0.1131,
+    "RoamMins": 0.0823,
+    "OverageFee": 0.0787,
+    "DataUsage": 0.0747,
+    "DataPlan": -0.0015,
+    "AccountWeeks": -0.0079,
+    "DayCalls": -0.012
+  },
+  "segments": {
+    "no_contract_renewal": 0.424,
+    "contract_renewed": 0.115,
+    "4plus_service_calls": 0.517,
+    "under_4_service_calls": 0.113
+  }
+}
